@@ -1,4 +1,4 @@
-var express = require('express');
+Var express = require('express');
 var fs = require('fs');
 var app = express();
 app.use(express.logger());
@@ -6,7 +6,6 @@ app.use(express.logger());
 var text = fs.readFileSync('index.html', 'utf8')
 
 app.get('/', function(request, response) {
-#  response.send('Hello World2!');
     response.send(text);
 });
 
